@@ -3,12 +3,12 @@ name: chromatic
 on:
   pull_request:
     paths:
-      - 'frontend/src/components/**/*.tsx'
+      - 'frontend/app/components/**/*.tsx'
   push:
     branches:
       - main
     paths:
-      - 'frontend/src/components/**/*.tsx'
+      - 'frontend/app/components/**/*.tsx'
 
 jobs:
   chromatic-deployment:
@@ -27,7 +27,7 @@ jobs:
         with:
           # 共通コンポーネントを対象とする
           PATTERNS: |
-            frontend/src/components/**/*.tsx
+            frontend/app/components/**/*.tsx
 
       - name: Install dependencies
         if: steps.check-diff.outputs.diff
