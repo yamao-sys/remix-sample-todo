@@ -1,0 +1,8 @@
+FROM node:20.14.0-alpine
+
+ENV APP /app
+WORKDIR $APP
+
+COPY . $APP
+
+EXPOSE 5173
