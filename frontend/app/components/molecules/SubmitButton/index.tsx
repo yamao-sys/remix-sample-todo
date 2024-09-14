@@ -1,4 +1,4 @@
-import { BaseButton } from '@/components/atoms/BaseButton';
+import { BaseButton } from '~/components/atoms/BaseButton';
 
 type Props = {
   labelText: string;
