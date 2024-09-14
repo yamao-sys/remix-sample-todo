@@ -3,9 +3,9 @@ name: frontend_lint
 on:
   pull_request:
     paths:
-      - 'frontend/src/**/*.js'
-      - 'frontend/src/**/*.ts'
-      - 'frontend/src/**/*.tsx'
+      - 'frontend/app/**/*.js'
+      - 'frontend/app/**/*.ts'
+      - 'frontend/app/**/*.tsx'
       - 'frontend/package.json'
 
 jobs:
@@ -35,7 +35,7 @@ jobs:
         shell: bash
 
       - name: Run prettier
-        run: cd ./frontend && npm run lint:prettier
+        run: cd ./frontend && npm run format
         shell: bash
 
       - name: Run eslint with reviewdog
