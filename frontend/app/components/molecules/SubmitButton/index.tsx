@@ -6,7 +6,13 @@ type Props = {
   additionalStyle?: string;
 } & JSX.IntrinsicElements['button'];
 
-export const SubmitButton = ({ labelText, color, additionalStyle = '', onClick }: Props) => {
+export const SubmitButton = ({
+  labelText,
+  color,
+  additionalStyle = '',
+  name = 'action',
+  value = '',
+}: Props) => {
   return (
     <>
       <div className='w-full flex justify-center'>
@@ -15,7 +21,8 @@ export const SubmitButton = ({ labelText, color, additionalStyle = '', onClick }
             labelText={labelText}
             color={color}
             additionalStyle={additionalStyle}
-            onClick={onClick}
+            name={name}
+            value={value}
           />
         </div>
       </div>
