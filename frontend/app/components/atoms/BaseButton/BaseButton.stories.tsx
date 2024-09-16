@@ -22,7 +22,6 @@ export const DefaultButton: Story = {
   args: {
     labelText: 'default',
     color: 'gray',
-    onClick: fn(),
   },
 };
 
@@ -30,7 +29,6 @@ export const SuccessButton: Story = {
   args: {
     labelText: 'success',
     color: 'green',
-    onClick: fn(),
   },
 };
 
@@ -38,7 +36,6 @@ export const DangerButton: Story = {
   args: {
     labelText: 'danger',
     color: 'red',
-    onClick: fn(),
   },
 };
 
@@ -47,6 +44,5 @@ export const AdditionalStyleButton: Story = {
     labelText: 'success',
     color: 'green',
     additionalStyle: 'text-xs lg:text-sm',
-    onClick: fn(),
   },
 };
