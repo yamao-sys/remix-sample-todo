@@ -2,6 +2,10 @@
 
 Remix による TODO リストの作成
 
+- useStateベースの状態管理に慣れているとキャッチアップが大変...
+- AspidaによるAPI Clientと相性が悪い...
+  - CommonJSベースのスクリプトにES Moduleを読み込もうとするので...
+
 ## 参考
 
 - Remix の環境構築
