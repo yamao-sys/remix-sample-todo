@@ -1,5 +1,7 @@
+import { SerializeFrom } from '@remix-run/node';
+
 type Props = {
-  messages: string[];
+  messages: SerializeFrom<string[]>;
 };
 
 export const ValidationErrors = ({ messages }: Props) => {

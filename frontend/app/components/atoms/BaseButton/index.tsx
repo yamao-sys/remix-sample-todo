@@ -6,7 +6,13 @@ type Props = {
   additionalStyle?: string;
 } & JSX.IntrinsicElements['button'];
 
-export const BaseButton = ({ labelText, color, additionalStyle = '', onClick }: Props) => {
+export const BaseButton = ({
+  labelText,
+  color,
+  additionalStyle = '',
+  name = 'action',
+  value = '',
+}: Props) => {
   const buttonColorStyle = useMemo(() => {
     switch (color) {
       case 'green':
@@ -22,7 +28,8 @@ export const BaseButton = ({ labelText, color, additionalStyle = '', onClick }: 
     <>
       <button
         className={`py-2 px-8 ${buttonColorStyle} rounded-xl text-white ${additionalStyle}`}
-        onClick={onClick}
+        name={name}
+        value={value}
       >
         {labelText}
       </button>

@@ -21,7 +21,6 @@ export const SuccessSubmitButton: Story = {
   args: {
     labelText: '保存する',
     color: 'green',
-    onClick: fn(),
   },
 };
 
@@ -29,7 +28,6 @@ export const DefaultSubmitButton: Story = {
   args: {
     labelText: '戻る',
     color: 'gray',
-    onClick: fn(),
   },
 };
 
@@ -37,6 +35,5 @@ export const DangerSubmitButton: Story = {
   args: {
     labelText: '削除する',
     color: 'red',
-    onClick: fn(),
   },
 };

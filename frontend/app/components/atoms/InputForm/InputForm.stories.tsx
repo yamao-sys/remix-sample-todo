@@ -18,7 +18,7 @@ export const EmailInputForm: Story = {
     labelId: 'email',
     labelText: 'メールアドレス',
     value: 'test@example.com',
-    onChange: fn(),
+    name: 'email',
   },
 };
 
@@ -28,7 +28,7 @@ export const PasswordInputForm: Story = {
     labelText: 'パスワード',
     type: 'password',
     value: 'password',
-    onChange: fn(),
+    name: 'password',
   },
 };
 
@@ -37,6 +37,6 @@ export const TextInputForm: Story = {
     labelId: 'title',
     labelText: 'タイトル',
     value: 'title',
-    onChange: fn(),
+    name: 'title',
   },
 };
